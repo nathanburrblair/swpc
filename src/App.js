@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Routes from "./Routes";
 import { HashRouter } from "react-router-dom";
-import ScrollToTop from "../src/components/ScrollToTop";
+// import ScrollToTop from "../src/components/ScrollToTop";
 import SiteHeader from "../src/components/SiteHeader/SiteHeader";
 import Footer from "../src/components/Footer/Footer";
 
@@ -10,14 +10,13 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <ScrollToTop>
+        {/* <ScrollToTop> */}
           <div className="App">
             <SiteHeader />
             {Routes}
-            <p>rendering</p>
             <Footer />
           </div>
-        </ScrollToTop>
+        {/* </ScrollToTop> */}
       </HashRouter>
     );
   }
