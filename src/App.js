@@ -3,6 +3,7 @@ import "./App.css";
 import Routes from "./Routes";
 import { HashRouter } from "react-router-dom";
 import SiteHeader from './components/SiteHeader/SiteHeader'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <div className="App">
           <SiteHeader />
           {Routes}
+          <Footer />
           </div>
       </HashRouter>
     );
