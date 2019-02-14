@@ -15,7 +15,7 @@ const DesignCard = props => {
           alt=""
         />
         <div className="mobile_product_info">
-          <h1>{props.product.name}</h1>
+          <h2>{props.product.name}</h2>
           <p>${props.product.price}</p>
         </div>
       </div>
@@ -25,7 +25,7 @@ const DesignCard = props => {
       >
         <div className="overlay">
           <div className="overlay_text">
-            <h1>{props.product.name}</h1>
+            <h2>{props.product.name}</h2>
             <p>${props.product.price}</p>
           </div>
         </div>

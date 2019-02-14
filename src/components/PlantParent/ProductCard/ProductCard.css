@@ -33,7 +33,7 @@
     color: #F2F2F2;
 }
 
-.overlay_text h1 {
+.overlay_text h2 {
     margin: 0;
     color: #F2F2F2;
 }
@@ -43,13 +43,13 @@
     transition: 0.5s;
   }
 
-/* h1 { 
+h2 { 
     color: #353535;
     font-family: "Krona One", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     margin: 20px 20px 0 20px;
-} */
+}
 
 h4 {
     margin-top: 6px;
