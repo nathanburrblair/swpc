@@ -63,17 +63,35 @@ button {
     grid-gap: 20px;
   }
 
-  .category_intro {
-    margin: 0 10% 0 10%;
+  .plant_category_intro {
+    /* margin: 0 10% 0 10%; */
+  }
+
+  .plant_category_intro h1 {
+    font-size: 48px;
+    margin: 54px 0 40px 0;
+  }
+
+  .plant_category_intro p {
+    margin: 0 10vw 60px 10vw;
   }
 }
+
 @media (min-width: 770px) {
   .list {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
+}
 
-  .category_intro {
-    margin: 0 20% 0 20%;
+@media (min-width: 1000px) {
+
+  .plant_category_intro h1 {
+    font-size: 48px;
+    margin: 54px 0 40px 0;
+  }
+
+  .plant_category_intro p {
+    margin: 0 25vw 60px 25vw; 
   }
 }
