@@ -16,6 +16,11 @@
   position: relative;
 }
 
+.plants_content_container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
 .plant_intro {
   margin: 10vh 0 10px 0;
   padding: 28px 38px 28px 38px;

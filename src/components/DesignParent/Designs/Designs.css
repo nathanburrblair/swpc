@@ -5,6 +5,11 @@
   position: relative;
 }
 
+.design_content_container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
 .design_intro {
   margin: 10vh 0 10px 0;
   padding: 28px 38px 28px 38px;

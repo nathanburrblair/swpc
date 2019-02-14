@@ -4,6 +4,9 @@ import "./Plants.css";
 import axios from "axios";
 // import Plant from "../../components/Plant/Plant";
 import { Link } from "react-router-dom";
+import fb from "../../../images/facebook-logo.svg";
+import insta from "../../../images/instagram.svg";
+import twitter from "../../../images/twitter.svg";
 
 class Plants extends Component {
   constructor(props) {
@@ -90,7 +93,9 @@ class Plants extends Component {
                   </Link>
                 </div>
                 <p>
-                  Our selection of succulents is unrivaled. Come shop and chat with us for tips on how to care for these amazing little plants.
+                  Our selection of succulents is unrivaled. Come shop and chat
+                  with us for tips on how to care for these amazing little
+                  plants.
                 </p>
                 <Link to="/plants/succulent">
                   <button>Shop Succulents</button>
@@ -106,13 +111,32 @@ class Plants extends Component {
                   </Link>
                 </div>
                 <p>
-                  Our selection of bonsai trees is matched only by our knowledge of how to care for them. Come in and we'll share what we know.
+                  Our selection of bonsai trees is matched only by our knowledge
+                  of how to care for them. Come in and we'll share what we know.
                 </p>
                 <Link to="/plants/bonsai">
                   <button>Shop Bonsai</button>
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="container_footer">
+          <div className="container_contact_info">
+            <h3>SOIL & WATER</h3>
+            <p>
+              123 Main St.
+              <br />
+              Anytown, USA
+              <br />
+              87654
+            </p>
+            <p>(987) 654-3210</p>
+          </div>
+          <div className="container_social">
+            <img src={fb} alt="" />
+            <img src={insta} alt="" />
+            <img src={twitter} alt="" />
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@ import Axios from "axios";
 import ProductCard from "../ProductCard/ProductCard";
 import "./PlantCategories.css";
 import Dropzone from "react-dropzone";
+import fb from "../../../images/facebook-logo.svg";
+import insta from "../../../images/instagram.svg";
+import twitter from "../../../images/twitter.svg";
 
 //For dropzone image preview
 const thumbsContainer = {
@@ -185,7 +188,7 @@ class PlantCategories extends Component {
 
     return (
       <div className="mainBody">
-        <div className="categories_content_container">
+        <div className="plant_content_container">
           <div className="plant_category_intro">
             <h1>
               {this.props.match.params.category.charAt(0).toUpperCase() +
@@ -267,6 +270,24 @@ class PlantCategories extends Component {
               </button>
             )}
           </div> */}
+        </div>
+        <div className="container_footer">
+          <div className="container_contact_info">
+            <h3>SOIL & WATER</h3>
+            <p>
+              123 Main St.
+              <br />
+              Anytown, USA
+              <br />
+              87654
+            </p>
+            <p>(987) 654-3210</p>
+          </div>
+          <div className="container_social">
+            <img src={fb} alt="" />
+            <img src={insta} alt="" />
+            <img src={twitter} alt="" />
+          </div>
         </div>
       </div>
     );

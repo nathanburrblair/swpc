@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./ContainerPage.css";
 import axios from "axios";
+import fb from "../../../images/facebook-logo.svg";
+import insta from "../../../images/instagram.svg";
+import twitter from "../../../images/twitter.svg";
 
 class ContainerPage extends Component {
   constructor(props) {
@@ -42,7 +45,7 @@ class ContainerPage extends Component {
     });
   }
 
-  handleAddToCart () {
+  handleAddToCart() {
     // Add to cart
   }
 
@@ -116,6 +119,24 @@ class ContainerPage extends Component {
                 </div>
               </div>
             )}
+          </div>
+          <div className="container_footer">
+            <div className="container_contact_info">
+              <h3>SOIL & WATER</h3>
+              <p>
+                123 Main St.
+                <br />
+                Anytown, USA
+                <br />
+                87654
+              </p>
+              <p>(987) 654-3210</p>
+            </div>
+            <div className="container_social">
+              <img src={fb} alt="" />
+              <img src={insta} alt="" />
+              <img src={twitter} alt="" />
+            </div>
           </div>
         </div>
       );

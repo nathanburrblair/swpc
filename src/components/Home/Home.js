@@ -5,6 +5,9 @@ import plantsbg from "../../images/plantsbg.jpg";
 import containerbg from "../../images/containerbgdr.jpg";
 import designbg from "../../images/designbg1.jpg";
 import { Link } from "react-router-dom";
+import fb from "../../images/facebook-logo.svg";
+import insta from "../../images/instagram.svg";
+import twitter from "../../images/twitter.svg";
 
 const Title = styled.h1`
   font-size: 36px;
@@ -237,10 +240,11 @@ class Home extends Component {
             <div id="soilWater">
               <div id="layer" />
               <div />
-                <Title>
-                  SOIL + WATER<br />
-                  Plant Co.
-                </Title>
+              <Title>
+                SOIL + WATER
+                <br />
+                Plant Co.
+              </Title>
             </div>
             <SectionTwoContainer>
               <SectionTwo>
@@ -298,6 +302,24 @@ class Home extends Component {
             </SectionThreeContainer>
           </article>
         </main>
+        <div className="container_footer">
+          <div className="container_contact_info">
+            <h3>SOIL & WATER</h3>
+            <p>
+              123 Main St.
+              <br />
+              Anytown, USA
+              <br />
+              87654
+            </p>
+            <p>(987) 654-3210</p>
+          </div>
+          <div className="container_social">
+            <img src={fb} alt="" />
+            <img src={insta} alt="" />
+            <img src={twitter} alt="" />
+          </div>
+        </div>
       </div>
     );
   }
