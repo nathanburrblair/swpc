@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Title = styled.h1`
   font-size: 34px;
+  letter-spacing: 0px;
   font-family: "Krona One", sans-serif;
   color: #353535;
   margin-top: 80px;
