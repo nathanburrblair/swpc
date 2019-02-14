@@ -63,9 +63,9 @@ class Containers extends Component {
                   </Link>
                 </div>
                 <p>
-                  Naturally beautiful terracotta is always a good choice for a container. Our impressive selection will meet any need, and look fabulous in the process.
+                  When you need something clean and modern, choose concrete. It's sturdy, and the gray on green contrast looks amazing.
                 </p>
-                <Link to="/containers/terracotta">
+                <Link to="/containers/concrete">
                   <button>Shop Concrete</button>
                 </Link>
               </div>

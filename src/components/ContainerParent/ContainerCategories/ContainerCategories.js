@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import ContainerCard from "../ContainerCard/ContainerCard"
+import ContainerCard from "../ContainerCard/ContainerCard";
 import "./ContainerCategories.css";
 import Dropzone from "react-dropzone";
+import fb from "../../../images/facebook-logo.svg";
+import insta from "../../../images/instagram.svg";
+import twitter from "../../../images/twitter.svg";
 
 //For dropzone image preview
 const thumbsContainer = {
@@ -83,7 +86,9 @@ class ContainerCategories extends Component {
     this.handleAddContainer = this.handleAddContainer.bind(this);
     this.handleContainerName = this.handleContainerName.bind(this);
     this.handleContainerPrice = this.handleContainerPrice.bind(this);
-    this.handleContainerDescription = this.handleContainerDescription.bind(this);
+    this.handleContainerDescription = this.handleContainerDescription.bind(
+      this
+    );
     this.handleAddContainerToDB = this.handleAddContainerToDB.bind(this);
   }
   componentDidMount() {
@@ -128,7 +133,9 @@ class ContainerCategories extends Component {
       product_category: this.state.containerCategory,
       product_image: this.state.containerPicture
     }).then(response => {
-      this.props.history.push(`/containers/${this.props.match.params.category}`);
+      this.props.history.push(
+        `/containers/${this.props.match.params.category}`
+      );
       window.location.reload();
     });
   }
@@ -168,7 +175,7 @@ class ContainerCategories extends Component {
     console.log("match params", this.props.match.params);
 
     const { files } = this.state;
-    
+
     const thumbs = files.map(file => (
       <div style={thumb} key={file.name}>
         <div style={thumbInner}>
@@ -176,23 +183,22 @@ class ContainerCategories extends Component {
         </div>
       </div>
     ));
-    
-    let listOfContainerThings = this.state.containerProducts.map((product, i) => {
-      return <ContainerCard key={i} product={product} />;
-    });
-    
+
+    let listOfContainerThings = this.state.containerProducts.map(
+      (product, i) => {
+        return <ContainerCard key={i} product={product} />;
+      }
+    );
+
     return (
-      <div className="mainBody">
-        <div className="categories_content_container">
+      <div className="container_main_body">
+        <div className="container_content_container">
           <div className="container_category_intro">
-            <h1>
-              {this.props.match.params.category.charAt(0).toUpperCase() +
-                this.props.match.params.category.slice(1) +
-                "S"}
-            </h1>
+            <h1>{this.props.match.params.category}</h1>
             <p>
-              This is an intro paragraph that says what amazing containers we have
-              at our store. It encourages you to browse and buy containers.
+              Browse our selection below or come out and see us at our shop. Our
+              professionals can help you choose and share expert plant care
+              advice.
             </p>
           </div>
           <div className="list">{listOfContainerThings}</div>
@@ -265,6 +271,24 @@ class ContainerCategories extends Component {
               </button>
             )}
           </div> */}
+        </div>
+        <div className="container_footer">
+          <div className="container_contact_info">
+            <h3>SOIL & WATER</h3>
+            <p>
+              123 Main St.
+              <br />
+              Anytown, USA
+              <br />
+              87654
+            </p>
+            <p>(987) 654-3210</p>
+          </div>
+          <div className="container_social">
+            <img src={fb} alt="" />
+            <img src={insta} alt="" />
+            <img src={twitter} alt="" />
+          </div>
         </div>
       </div>
     );

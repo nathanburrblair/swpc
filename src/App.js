@@ -14,7 +14,7 @@ class App extends Component {
           <div className="App">
             <SiteHeader />
             {Routes}
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </ScrollToTop>
       </HashRouter>
