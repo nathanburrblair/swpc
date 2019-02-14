@@ -1,14 +1,17 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Routes from "./Routes";
 import { HashRouter } from "react-router-dom";
+import SiteHeader from './components/SiteHeader/SiteHeader'
 
 class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="App">{Routes}</div>
+        <div className="App">
+          <SiteHeader />
+          {Routes}
+          </div>
       </HashRouter>
     );
   }
