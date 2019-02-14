@@ -14,6 +14,7 @@ class App extends Component {
           <div className="App">
             <SiteHeader />
             {Routes}
+            <p>rendering</p>
             <Footer />
           </div>
         </ScrollToTop>
