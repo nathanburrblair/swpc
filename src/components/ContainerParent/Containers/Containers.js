@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 
 class Containers extends Component {
   componentDidMount() {
-    const movingWords = document.querySelectorAll(".container_subtitle");
+    // const movingWords = document.querySelectorAll(".container_subtitle");
 
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.0
-    };
+    // const options = {
+    //   root: null,
+    //   rootMargin: "0px",
+    //   threshold: 0.0
+    // };
 
-    let observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          entry.target.classList.add("container_subtitle");
-        } else {
-          entry.target.classList.remove("container_subtitle");
-        }
-      });
-    }, options);
+    // let observer = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.intersectionRatio > 0) {
+    //       entry.target.classList.add("container_subtitle");
+    //     } else {
+    //       entry.target.classList.remove("container_subtitle");
+    //     }
+    //   });
+    // }, options);
 
-    movingWords.forEach(word => {
-      observer.observe(word);
-    });
+    // movingWords.forEach(word => {
+    //   observer.observe(word);
+    // });
   }
 
   render() {

@@ -20,27 +20,27 @@ class Plants extends Component {
         allPlants: res.data
       })
     );
-    const movingWords = document.querySelectorAll(".plant_subtitle");
+    // const movingWords = document.querySelectorAll(".plant_subtitle");
 
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.0
-    };
+    // const options = {
+    //   root: null,
+    //   rootMargin: "0px",
+    //   threshold: 0.0
+    // };
 
-    let observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          entry.target.classList.add("plant_subtitle");
-        } else {
-          entry.target.classList.remove("plant_subtitle");
-        }
-      });
-    }, options);
+    // let observer = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.intersectionRatio > 0) {
+    //       entry.target.classList.add("plant_subtitle");
+    //     } else {
+    //       entry.target.classList.remove("plant_subtitle");
+    //     }
+    //   });
+    // }, options);
 
-    movingWords.forEach(word => {
-      observer.observe(word);
-    });
+    // movingWords.forEach(word => {
+    //   observer.observe(word);
+    // });
   }
 
   render() {
