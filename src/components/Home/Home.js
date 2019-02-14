@@ -6,9 +6,14 @@ import containerbg from "../../images/containerbgdr.jpg";
 import designbg from "../../images/designbg1.jpg";
 import { Link } from "react-router-dom";
 
+const SiteTitle = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const Title = styled.h1`
   font-size: 34px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   font-family: "Krona One", sans-serif;
   color: #353535;
   margin-top: 80px;
@@ -177,7 +182,7 @@ const DesignButton = styled.button`
   font-size: 18px;
   text-transform: uppercase;
   background-color: #353535;
-  color: #F2F2F2;
+  color: #f2f2f2;
   border: none;
   padding: 0 16px 0 16px;
 
@@ -237,15 +242,19 @@ class Home extends Component {
             <div id="soilWater">
               <div id="layer" />
               <div />
-              <Title>
-                SOIL + WATER <br />
-                Plant Co.
-              </Title>
+              <SiteTitle>
+                <Title>
+                  Soil + Water<br />
+                  Plant Co.
+                </Title>
+              </SiteTitle>
             </div>
             <SectionTwoContainer>
               <SectionTwo>
                 <div className="moving_subtitle">
-                  <Link to="/plants"><h2>Plants</h2></Link>
+                  <Link to="/plants">
+                    <h2>Plants</h2>
+                  </Link>
                 </div>
                 <p>
                   We’ve scoured the globe to find the best of the best. Come to
@@ -263,11 +272,13 @@ class Home extends Component {
               <SectionFourEmpty />
               <SectionFour>
                 <div className="moving_subtitle">
-                  <Link to="/design"><h2 className="design_h2">Design</h2></Link>
+                  <Link to="/design">
+                    <h2 className="design_h2">Design</h2>
+                  </Link>
                 </div>
                 <p>
-                  When you come to the shop to make a purchae, we’ll
-                  pot your plant for you. We’ll also come to your home to design your
+                  When you come to the shop to make a purchae, we’ll pot your
+                  plant for you. We’ll also come to your home to design your
                   space.
                 </p>
                 <Link to="/design">
@@ -278,7 +289,9 @@ class Home extends Component {
             <SectionThreeContainer>
               <SectionThree>
                 <div className="moving_subtitle">
-                  <Link to="/containers"><h2>Containers</h2></Link>
+                  <Link to="/containers">
+                    <h2>Containers</h2>
+                  </Link>
                 </div>
                 <p>
                   Your plants are only as good as their containers. We have
