@@ -184,12 +184,11 @@ class ContainerCategories extends Component {
     return (
       <div className="mainBody">
         <div className="categories_content_container">
-          <div className="category_intro">
+          <div className="container_category_intro">
             <h1>
               {this.props.match.params.category.charAt(0).toUpperCase() +
                 this.props.match.params.category.slice(1) +
-                "S"}{" "}
-              You'll Love
+                "S"}
             </h1>
             <p>
               This is an intro paragraph that says what amazing containers we have

@@ -4,7 +4,7 @@ import "./PlantCare.css";
 const PlantCare = () => {
   return (
     <div>
-      <div className="body">
+      <div className="care_body">
         <h2>Plant Care Page Coming Soon</h2>
       </div>
     </div>
