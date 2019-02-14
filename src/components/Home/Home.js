@@ -6,11 +6,6 @@ import containerbg from "../../images/containerbgdr.jpg";
 import designbg from "../../images/designbg1.jpg";
 import { Link } from "react-router-dom";
 
-const SiteTitle = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 const Title = styled.h1`
   font-size: 36px;
   letter-spacing: 0;
@@ -59,7 +54,7 @@ const SectionTwo = styled.section`
 
   p {
     width: 70%;
-    color: #f2f22;
+    color: #f2f2f2;
     font-family: "Lato", sans-serif;
     font-size: 20px;
     padding: 0 0 40px 0;
@@ -242,12 +237,10 @@ class Home extends Component {
             <div id="soilWater">
               <div id="layer" />
               <div />
-              <SiteTitle>
                 <Title>
                   SOIL + WATER<br />
                   Plant Co.
                 </Title>
-              </SiteTitle>
             </div>
             <SectionTwoContainer>
               <SectionTwo>
@@ -277,7 +270,7 @@ class Home extends Component {
                   </Link>
                 </div>
                 <p>
-                  When you come to the shop to make a purchae, we’ll pot your
+                  When you come to the shop to make a purchase, we’ll pot your
                   plant for you. We’ll also come to your home to design your
                   space.
                 </p>

@@ -1,0 +1,75 @@
+.mainBody {
+    padding-top: 11vh;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .category_intro {
+    padding: 28px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 5% 0 5%;
+  }
+  
+  .category_intro h1 {
+    font-family: "Krona One", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .dragbox {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inner_box:focus {
+    outline: 0;
+  }
+  
+  button {
+    width: auto;
+    height: 50px;
+    font-family: "Krona One", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    color: #353535;
+    border: none;
+    padding: 0 16px 0 16px;
+    margin-bottom: 60px;
+  }
+  
+  .add_container_button {
+    margin-top: 60px;
+  }
+  
+  .list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 0px;
+    margin: 0 20px 0 20px;
+  }
+  
+  @media (min-width: 600px) {
+    .list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .category_intro {
+      margin: 0 10% 0 10%;
+    }
+  }
+  @media (min-width: 770px) {
+    .list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .category_intro {
+      margin: 0 20% 0 20%;
+    }
+  }
+  
