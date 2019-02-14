@@ -12,7 +12,7 @@ const SiteTitle = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 42px;
+  font-size: 38px;
   letter-spacing: 0;
   font-family: "Krona One", sans-serif;
   color: #353535;
@@ -244,7 +244,7 @@ class Home extends Component {
               <div />
               <SiteTitle>
                 <Title>
-                  Soil + Water<br />
+                  SOIL + WATER<br />
                   Plant Co.
                 </Title>
               </SiteTitle>
