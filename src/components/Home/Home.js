@@ -12,7 +12,7 @@ const SiteTitle = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 38px;
+  font-size: 36px;
   letter-spacing: 0;
   font-family: "Krona One", sans-serif;
   color: #353535;
@@ -59,9 +59,9 @@ const SectionTwo = styled.section`
 
   p {
     width: 70%;
-    color: #f2f2f2;
+    color: #f2f22;
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 0 40px 0;
   }
 
@@ -101,7 +101,7 @@ const SectionThree = styled.section`
     width: 70%;
     color: #f2f2f2;
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 0 40px 0;
   }
 
@@ -140,7 +140,7 @@ const SectionFour = styled.section`
     width: 70%;
     color: #353535;
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 0 40px 0;
   }
 
