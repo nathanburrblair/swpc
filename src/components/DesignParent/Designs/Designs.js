@@ -32,9 +32,9 @@ class Designs extends Component {
       <div className="design_container">
         <div className="design_content_container">
           <div className="design_intro">
-            <h1>Designs To Love</h1>
+            <h1>Design</h1>
             <p>
-              Whether you're preparing to sell, remodel, or just want a well thought out space, we're here to help. Not only will we come to your home or place of business to stage the space, we'll also take care of your plants on an ongoing basis. 
+              Whether you're preparing to sell, remodel, or want a well thought out space, we're here to help. Not only will we come to your home or business to stage the space, we'll also take care of your plants on an ongoing basis. 
             </p>
           </div>
           <div className="sub_categories">

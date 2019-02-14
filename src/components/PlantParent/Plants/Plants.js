@@ -56,7 +56,7 @@ class Plants extends Component {
         {/* <div className="all_plant_list">{displayAllPlants}</div> */}
         <div className="plants_content_container">
           <div className="plant_intro">
-            <h1>Plants To Love</h1>
+            <h1>Plants</h1>
             <p>
               Live plants have the power to transform your space into something
               better. Tour our online shop or come visit us in person. We'll set

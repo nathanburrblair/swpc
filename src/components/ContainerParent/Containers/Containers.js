@@ -32,7 +32,7 @@ class Containers extends Component {
       <div className="container_container">
         <div className="containers_content_container">
           <div className="container_intro">
-            <h1>Containers To Love</h1>
+            <h1>Containers</h1>
             <p>
               The perfect plant belongs inside an equally impressive container. We select only the finest handcrafted containers so you'll want to proudly put them on display. Browse our online store or come see us in person to talk with one of our professionals.
             </p>
