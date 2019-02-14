@@ -204,27 +204,27 @@ class Home extends Component {
     });
 
     // This makes the subtitles animate
-    const movingWords = document.querySelectorAll(".moving_subtitle");
+    // const movingWords = document.querySelectorAll(".moving_subtitle");
 
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.0
-    };
+    // const options = {
+    //   root: null,
+    //   rootMargin: "0px",
+    //   threshold: 0.0
+    // };
 
-    let observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          entry.target.classList.add("moving_subtitle");
-        } else {
-          entry.target.classList.remove("moving_subtitle");
-        }
-      });
-    }, options);
+    // let observer = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.intersectionRatio > 0) {
+    //       entry.target.classList.add("moving_subtitle");
+    //     } else {
+    //       entry.target.classList.remove("moving_subtitle");
+    //     }
+    //   });
+    // }, options);
 
-    movingWords.forEach(word => {
-      observer.observe(word);
-    });
+    // movingWords.forEach(word => {
+    //   observer.observe(word);
+    // });
     // End animate subtitles
   }
 
