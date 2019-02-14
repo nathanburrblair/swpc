@@ -12,7 +12,7 @@ const SiteTitle = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 34px;
+  font-size: 42px;
   letter-spacing: 0;
   font-family: "Krona One", sans-serif;
   color: #353535;
